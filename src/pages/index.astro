@@ -8,9 +8,50 @@ import band from "../assets/images/band.jpg";
 import concert from "../assets/images/concert.jpg";
 import style from "../assets/images/style.jpg";
 import woman from "../assets/images/woman.jpg";
+const schemamarkup = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Punkens Oprindelse",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Punk-musikken opstod i slutningen af 1970'erne som en reaktion på det etablerede samfund og den kommercielle rockscene.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Hvem var de første punkbands?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "De første punkbands var The Ramones i USA og Sex Pistols i Storbritannien.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Var punk mere end bare musik?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Punk blev hurtigt meget mere end bare musik. Det blev en subkultur, hvor 'anti-establishment' og DIY-filosofien kom til udtryk i alt fra tøjstil til pladeproduktion.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Lever punk stadig i dag?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Selvom punk måske ikke længere dominerer hitlisterne, lever dens arv videre i nutidens musik og kultur.",
+      },
+    },
+  ],
+};
 ---
 
+<!-- og:title="Punkens Oprindelse og Indflydelse: Fra Sex Pistols til Moderne Musik
+" og:description="Dyk ned i punkens historie, fra dens rå oprindelse i 1970'erne til dens indflydelse på nutidens musik og kultur." -->
 <MainLayout title=" Punkens Oprindelse og Indflydelse" description="Lær om punkens oprindelse, dens klassiske bands, og hvordan den har påvirket moderne musik.">
+  <script type="application/ld+json" set:html={JSON.stringify(schemamarkup)} />
   <article class="grid mx-auto container gap-4 pt-4 prose">
     <h1>Punkens Oprindelse og Indflydelse</h1>
     <h2>1) Punkens Oprindelse</h2>

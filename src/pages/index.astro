@@ -1,15 +1,32 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
+import band from "../assets/images/band.jpg";
+import concert from "../assets/images/concert.jpg";
+import style from "../assets/images/style.jpg";
+import woman from "../assets/images/woman.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout title=" Punkens Oprindelse og Indflydelse" description="Lær om punkens oprindelse, dens klassiske bands, og hvordan den har påvirket moderne musik.">
+  <article class="grid mx-auto container gap-4 pt-4 prose">
+    <h1>Punkens Oprindelse og Indflydelse</h1>
+    <h2>1) Punkens Oprindelse</h2>
+    <p>Punk-musikken opstod i slutningen af 1970'erne som en reaktion på det etablerede samfund og den kommercielle rockscene. Oprindeligt udsprang genren af garage rock og protopunk fra bands som The Stooges og MC5, der lagde fundamentet for punkens rå og rebelske lyd. Punk blev hurtigt et talerør for unge, der var frustrerede over sociale uligheder, og genren blev tæt forbundet med ungdomsoprør, anti-autoritær attitude og en "gør-det-selv" (DIY) tilgang.</p>
+    <Image src={band} alt="et billede fra en koncert, hvor en hånd er i fokus" />
+    <h2>2) Klassiske Punk-bands</h2>
+    <p>De første punkbands, som The Ramones i USA og Sex Pistols i Storbritannien, definerede genren både musikalsk og visuelt. The Ramones' hurtige, simple guitar-riffs og korte sange satte en ny standard for, hvad rockmusik kunne være. På den anden side chokerede Sex Pistols med deres anarkistiske budskaber og provokerende optrædener. Bands som The Clash blandede punk med politisk aktivisme, hvilket gav genren dybere indhold og bredere appel.</p>
+    <Image src={concert} alt="et billede fra en koncert" />
+    <h2>3) Punkens Subkulturer og Modkultur</h2>
+    <p>Punk blev hurtigt meget mere end bare musik. Det blev en subkultur, hvor "anti-establishment" og DIY-filosofien kom til udtryk i alt fra tøjstil til pladeproduktion. Punkerne gik imod samfundets normer med deres karakteristiske mohawks, læderjakker og nittearmbånd. På samme tid blev punk-scenen kendt for sin uafhængighed fra den kommercielle musikindustri, hvor mange bands selv producerede og distribuerede deres musik.</p>
+    <Image src={style} alt="et billede af tøjstilen" />
+    <h2>4) Punkens Indflydelse på Moderne Musik</h2>
+    <p>Punkens ånd og lyd har haft en vedvarende indflydelse på moderne musik. I 1990'erne dukkede grunge-scenen op med bands som Nirvana, der blandede punkens energi med en mere melodisk rocklyd. Hardcore punk og pop-punk, repræsenteret af bands som Green Day og Blink-182, videreførte punkens hurtige, energiske stil og gjorde den populær blandt en ny generation af musikelskere.</p>
+
+    <h2>5) Punkens Arv i Dag</h2>
+    <p>Selvom punk måske ikke længere dominerer hitlisterne, lever dens arv videre i nutidens musik og kultur. Den DIY-attitude, der blev født med punk, er stadig en central del af undergrundsmusikken, og mange bands holder fast i punkens uafhængighed. Punkens budskaber om individualitet, modstand mod autoritet og sociale uretfærdigheder er stadig relevante i dag, hvor nye generationer af musikere og fans omfavner genren som en livsstil og et oprør mod status quo.</p>
+    <Image src={woman} alt="et billede er en kvinden der vil have rettigheder" />
+  </article>
 </MainLayout>
